@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:not(img) {
+    position: relative;
+    z-index: 1;
+}
+
+img:not(#testimonies img, #contact-info img, social-media img) {
+    position: absolute;
+    z-index: 0;
+    right: 10%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+#hero {
+    background-color: #a7a7a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-left: 50%;
+    }
+}
+
+#about-us {
+    background-color: #e0e0e0;
+}
+
+#our-fleet {
+    background-color: #a7a7a7;
+}
+
+#explore-with-us {
+    background-color: #e0e0e0;
+}
+
+#mission-highlights {
+    background-color: #a7a7a7;
+}
+
+#join-us {
+    background-color: #e0e0e0;
+}
+
+#testimonial {
+    background-color: #a7a7a7;
+
+    #testimonies img {
+        max-width: 200px;
+        border-radius: 50%;
+    }
+}
+
+#contact {
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+        text-align: center;
+    }
+
+    #contact-info, #social-media {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            width: 80px;
+            height: 80px;
+
+            border-radius: 12px;
+        }
+    }
+
+    #social-media img {
+        max-width: 64px;
+    }
+    
+}
