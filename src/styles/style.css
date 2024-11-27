@@ -9,7 +9,7 @@
     z-index: 1;
 }
 
-img:not(#testimonies img, #contact-info img, social-media img) {
+img:not(#testimonies img, #contact-info img, #social-media img) {
     position: absolute;
     z-index: 0;
     right: 10%;
@@ -82,7 +82,7 @@ section {
         justify-content: flex-start;
         gap: 1rem;
 
-        span {
+        a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -91,11 +91,12 @@ section {
             height: 80px;
 
             border-radius: 12px;
+            cursor: pointer;
         }
     }
 
     #social-media img {
-        max-width: 64px;
+        width: 72px;
     }
     
 }
