@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --main-font: 'Chakra Petch', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,26 +26,68 @@ main {
     height: 100%;
     color: #fff;
     text-shadow: 0 0 5px #000;
+    font-family: var(--main-font);
+    font-weight: 400;
 }
 
 section {
     width: 100%;
     height: 100vh;
+    padding: 2rem;
     background: center no-repeat scroll;
     background-size: cover;
     box-shadow: inset 1000px 1000px 10px #0000004d;
 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    h1 {
+        font-size: 3.5rem;
+    }
+    h1, h2 {
+        text-align: center;
+        align-self: center;
+        margin: 2rem auto;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        max-width: fit-content;
+        align-self: center;
+    }
 }
 
 #hero {
     background-image: url("../img/backgrounds/background-1.jpg") ;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 
     img {
         margin-left: 50%;
+    }
+
+    p {
+        font-size: 2.2rem;
+    }
+    p:first-of-type {
+        align-self: flex-start;
+        margin-left: 10%;
+    }
+    p:last-of-type {
+        align-self: center;
     }
 }
 
@@ -57,6 +105,11 @@ section {
 
 #mission-highlights {
     background-image: url("../img/backgrounds/background-5.jpg");
+
+    b {
+        font-weight: bold;
+        text-decoration: underline;
+    }
 }
 
 #join-us {
