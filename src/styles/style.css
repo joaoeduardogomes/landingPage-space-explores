@@ -287,11 +287,13 @@ section {
 #contact {
     background-image: url("../img/backgrounds/background-8.jpg");
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 
     p {
         text-align: center;
+        margin-bottom: 2rem;
     }
 
     #contact-info, #social-media {
@@ -310,9 +312,19 @@ section {
 
             border-radius: 12px;
             cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: rotate(45deg);
+                img {
+                    rotate: -45deg;
+                }
+            }
         }
     }
 
+    #contact-info img, #social-media img {
+        transition: all 0.3s ease-in-out;
+    }
     #social-media img {
         width: 72px;
     }
