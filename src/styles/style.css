@@ -21,6 +21,13 @@ img:not(#testimonies img, #contact-info img, #social-media img) {
     right: 10%;
 }
 
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -129,8 +136,6 @@ section {
     
     p:last-of-type {
         grid-area: p2;
-        text-align: right;
-        
     }
 }
 
@@ -190,16 +195,45 @@ section {
     p:last-of-type {
         align-self: flex-end;
         margin-right: 5%;
-        text-align: right;
     }
 }
 
 #mission-highlights {
     background-image: url("../img/backgrounds/background-5.jpg");
+    display: grid;
+    grid-template-areas: ". title ."
+                        "h3a . h3b"
+                        "p1 . p2";
+    grid-template-rows: 40% 15% 30%;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
 
+    h2 {
+        grid-area: title;
+    }
+    h3:first-of-type {
+        grid-area: h3a;
+    }
+    h3:last-of-type {
+        grid-area: h3b;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    p:first-of-type {
+        grid-area: p1;
+    }
+    p:last-of-type {
+        grid-area: p2;
+    }
     b {
         font-weight: bold;
         text-decoration: underline;
+    }
+    h3:first-of-type, p:first-of-type {
+        margin-left: 4rem;
+    }
+    h3:last-of-type, p:last-of-type {
+        margin-right: 4rem;
     }
 }
 
