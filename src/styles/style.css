@@ -40,6 +40,7 @@ section {
 
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     /* justify-content: center; */
     /* align-items: center; */
 
@@ -67,6 +68,20 @@ section {
     button {
         max-width: fit-content;
         align-self: center;
+        padding: 1rem 2rem;
+        margin: 2rem auto;
+        border: none;
+        border-radius: 12px;
+        background-color: #b1b1b17c;
+        color: #fff;
+        font-family: var(--main-font);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
     }
 }
 
@@ -93,14 +108,90 @@ section {
 
 #about-us {
     background-image: url("../img/backgrounds/background-2.jpg");
+    display: grid;
+    grid-template-areas: ". title ."
+                    "p1 . p2";
+
+    h2 {
+        grid-area: title;
+        text-align: center;
+        margin-top: -2rem;
+    }
+    p {
+        max-width: 640px;
+        justify-self: center;
+        font-size: 1.6rem;
+    }
+    p:first-of-type {
+        grid-area: p1;
+        text-align: left;
+    }
+    
+    p:last-of-type {
+        grid-area: p2;
+        text-align: right;
+        
+    }
 }
 
 #our-fleet {
     background-image: url("../img/backgrounds/background-3.jpg");
+    display: grid;
+    grid-template-areas: ". title ."
+                    "h3a h3b h3c"
+                    "pa pb pc";
+    column-gap: .5rem;
+    row-gap: 4rem;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 40% 10% 30%;
+
+    h2 {
+        grid-area: title;
+    }
+    h3, p {
+        justify-self: center;
+    }
+    h3 {
+        align-self: center;
+    }
+
+    h3:nth-of-type(1) {
+        grid-area: h3a;
+    }
+    h3:nth-of-type(2) {
+        grid-area: h3b;
+    }
+    h3:nth-of-type(3) {
+        grid-area: h3c;
+    }
+    p:nth-of-type(1) {
+        grid-area: pa;
+    }
+    p:nth-of-type(2) {
+        grid-area: pb;
+    }
+    p:nth-of-type(3) {
+        grid-area: pc;
+    }
 }
 
 #explore-with-us {
     background-image: url("../img/backgrounds/background-4.jpg");
+    justify-content: space-evenly;
+
+    p {
+        font-size: 1.8rem;
+        max-width: 600px;
+    }
+    p:first-of-type {
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+    p:last-of-type {
+        align-self: flex-end;
+        margin-right: 5%;
+        text-align: right;
+    }
 }
 
 #mission-highlights {
