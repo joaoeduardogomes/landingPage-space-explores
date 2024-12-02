@@ -239,6 +239,14 @@ section {
 
 #join-us {
     background-image: url("../img/backgrounds/background-6.jpg");
+    /* align-items: center; */
+    justify-content: space-around;
+
+    p {
+        font-size: 1.6rem;
+        margin: 0 auto;
+        text-align: left;
+    }
 }
 
 #testimonial {
