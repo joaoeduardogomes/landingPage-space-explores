@@ -312,18 +312,28 @@ section {
 
             border-radius: 12px;
             cursor: pointer;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in;
             &:hover {
                 transform: rotate(45deg);
+                background-color: #0000007c;
                 img {
                     rotate: -45deg;
                 }
             }
         }
+        a[name="facebook"]:hover {
+            background-color: #039ae5;
+        }
+        a[name="instagram"]:hover {
+            background-image: linear-gradient(to bottom right, #304FFE, #4928F4, #6200EA, #673AB7, #8E24AA, #C2185B, #D81B60, #F50057, #FF1744, #FF5722, #FF6F00, #FF9800, #FFC107, #FFD54F, #FFE082, #FFECB3);
+        }
+        a[name="x"]:hover {
+            background-color: #000;
+        }
     }
 
     #contact-info img, #social-media img {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in;
     }
     #social-media img {
         width: 72px;
