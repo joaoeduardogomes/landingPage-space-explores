@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@keyframes astronautOneUpAndDown {
+    from {
+        transform: translateY(-30%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes satelliteUpAndDown {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(150%);
+    }
+}
+
 :root {
     --main-font: 'Chakra Petch', sans-serif;
 }
@@ -23,6 +41,8 @@ img:not(#testimonies img, #contact-info img, #social-media img) {
     position: absolute;
     z-index: 0;
     right: 10%;
+    will-change: transform; 
+    filter: drop-shadow(-2px -3px 5px #00000079);
 }
 
 .align-right {
@@ -107,6 +127,14 @@ section {
 
     img {
         margin-left: 50%;
+    }
+    img#astronaut-1 {
+        animation: astronautOneUpAndDown 4s ease-in-out infinite alternate;
+        right: 5%;
+    }
+    img#satellite {
+        animation: satelliteUpAndDown 4s ease-in-out infinite alternate;
+        right: 15%;
     }
 
     p {
