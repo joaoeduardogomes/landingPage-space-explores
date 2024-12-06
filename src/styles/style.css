@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@keyframes astronautOneUpAndDown {
-    from {
-        transform: translateY(-30%);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes satelliteUpAndDown {
-    from {
-        transform: translateY(200%);
-    }
-    to {
-        transform: translateY(150%);
-    }
-}
+@import "animations.css";
 
 :root {
     --main-font: 'Chakra Petch', sans-serif;
@@ -124,6 +108,7 @@ section {
     background-image: url("../img/backgrounds/background-1.jpg") ;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 2;
 
     img {
         margin-left: 50%;
@@ -154,6 +139,7 @@ section {
     display: grid;
     grid-template-areas: ". title ."
                     "p1 . p2";
+    position: relative;
 
     h2 {
         grid-area: title;
@@ -173,6 +159,13 @@ section {
     p:last-of-type {
         grid-area: p2;
     }
+
+    img#meteor {
+        animation: meteorFall 3s ease-out infinite;
+    }
+}
+#about-us, #about-us #meteor {
+    z-index: 1;
 }
 
 #our-fleet {

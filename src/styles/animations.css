@@ -1,0 +1,25 @@
+@keyframes astronautOneUpAndDown {
+    from {
+        transform: translateY(-30%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes satelliteUpAndDown {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(150%);
+    }
+}
+
+@keyframes meteorFall {
+    from {
+        transform: translate(-80%, -80%);
+    }
+    to {
+        transform: translate(200%, 200%);
+    }
+}
