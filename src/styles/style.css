@@ -167,7 +167,7 @@ section {
     img#astronaut-2 {
         bottom: 5%;
         left: -10%;
-        animation: astronautFloat 30s infinite;
+        animation: astronautFloatX 30s linear infinite, astronautFloatY 3s ease-in-out alternate infinite;
     }
 }
 
