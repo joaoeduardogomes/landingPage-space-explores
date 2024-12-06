@@ -162,10 +162,13 @@ section {
 
     img#meteor {
         animation: meteorFall 3s ease-out infinite;
+        z-index: 1;
     }
-}
-#about-us, #about-us #meteor {
-    z-index: 1;
+    img#astronaut-2 {
+        bottom: 5%;
+        left: -10%;
+        animation: astronautFloat 30s infinite;
+    }
 }
 
 #our-fleet {

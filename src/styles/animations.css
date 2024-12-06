@@ -1,3 +1,4 @@
+/* * SECTION 1 */
 @keyframes astronautOneUpAndDown {
     from {
         transform: translateY(-30%);
@@ -15,11 +16,20 @@
     }
 }
 
+/* * SECTION 2 */
 @keyframes meteorFall {
     from {
         transform: translate(-80%, -80%);
     }
     to {
         transform: translate(200%, 200%);
+    }
+}
+@keyframes astronautFloat{
+    from {
+        transform: translateX(10%);
+    }
+    to {
+        transform: translateX(1500%);
     }
 }
