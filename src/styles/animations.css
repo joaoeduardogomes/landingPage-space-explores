@@ -22,7 +22,7 @@
         transform: translate(-80%, -80%);
     }
     to {
-        transform: translate(200%, 200%);
+        transform: translate(300%, 300%);
     }
 }
 @keyframes astronautFloatX{
@@ -30,7 +30,7 @@
         transform: translateX(10%);
     }
     to {
-        transform: translateX(1500%);
+        transform: translateX(120vw);
     }
 }
 @keyframes astronautFloatY {

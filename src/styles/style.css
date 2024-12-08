@@ -140,6 +140,7 @@ section {
     grid-template-areas: ". title ."
                     "p1 . p2";
     position: relative;
+    overflow: hidden;
 
     h2 {
         grid-area: title;
@@ -161,8 +162,8 @@ section {
     }
 
     img#meteor {
-        animation: meteorFall 3s ease-out infinite;
-        z-index: 1;
+        animation: meteorFall 6s ease-out infinite;
+        z-index: 0;
     }
     img#astronaut-2 {
         bottom: 5%;
