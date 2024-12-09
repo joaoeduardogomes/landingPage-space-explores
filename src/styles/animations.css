@@ -30,7 +30,7 @@
         transform: translateX(10%);
     }
     to {
-        transform: translateX(120vw);
+        transform: translateX(110vw);
     }
 }
 @keyframes astronautFloatY {
@@ -42,4 +42,30 @@
     }
 }
 
-
+/* * SECTION 3 */
+    @keyframes astronautMoveLeft {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100vw);
+        }
+    }
+    @keyframes astronautShakeY {
+        0% {
+            margin-top: 0;
+        }
+        25% {
+            margin-top: -1rem;
+        }
+        50% {
+            margin-top: 0;
+        }
+        75% {
+            margin-top: -1rem;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+    

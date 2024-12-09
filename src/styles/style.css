@@ -168,7 +168,8 @@ section {
     img#astronaut-2 {
         bottom: 5%;
         left: -10%;
-        animation: astronautFloatX 30s linear infinite, astronautFloatY 3s ease-in-out alternate infinite;
+        animation: astronautFloatX 30s alternate infinite, astronautFloatY 3s ease-in-out alternate infinite;
+        /* TODO Change the animation-duration depending on the screen size */
     }
 }
 
@@ -182,6 +183,7 @@ section {
     row-gap: 4rem;
     grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: 40% 10% 30%;
+    position: relative;
 
     h2 {
         grid-area: title;
@@ -210,6 +212,12 @@ section {
     }
     p:nth-of-type(3) {
         grid-area: pc;
+    }
+
+    img#astronaut-3 {
+        top: 25%;
+        animation: astronautShakeY 2s ease-in-out 0s, 
+        astronautMoveLeft 4s ease-in-out 4s infinite;
     }
 }
 
