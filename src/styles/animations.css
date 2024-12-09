@@ -45,12 +45,17 @@
 /* * SECTION 3 */
     @keyframes astronautMoveLeft {
         from {
-            transform: translateX(0);
+            transform: translateX(50vw);
         }
         to {
             transform: translateX(-100vw);
         }
     }
+    
+    
+    
+    
+/* * SECTION 4 */
     @keyframes astronautShakeY {
         0% {
             margin-top: 0;

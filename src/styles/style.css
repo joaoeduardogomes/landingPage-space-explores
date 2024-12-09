@@ -216,8 +216,7 @@ section {
 
     img#astronaut-3 {
         top: 25%;
-        animation: astronautShakeY 2s ease-in-out 0s, 
-        astronautMoveLeft 4s ease-in-out 4s infinite;
+        animation: astronautMoveLeft 6s ease-in-out infinite;
     }
 }
 
