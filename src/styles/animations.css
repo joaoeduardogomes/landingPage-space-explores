@@ -1,16 +1,24 @@
+:root {
+    /* TODO change this pause in smaller screens */
+    --astronautPause: -35vw;
+}
+
 /* * SECTION 1 */
 @keyframes astronautOneUpAndDown {
     from {
         transform: translateY(-30%);
     }
+
     to {
         transform: translateY(0%);
     }
 }
+
 @keyframes satelliteUpAndDown {
     from {
         transform: translateY(200%);
     }
+
     to {
         transform: translateY(150%);
     }
@@ -21,56 +29,85 @@
     from {
         transform: translate(-80%, -80%);
     }
+
     to {
         transform: translate(300%, 300%);
     }
 }
-@keyframes astronautFloatX{
+
+@keyframes astronautFloatX {
     from {
         transform: translateX(10%);
     }
+
     to {
         transform: translateX(110vw);
     }
 }
+
 @keyframes astronautFloatY {
     from {
         margin-bottom: 2.2rem;
     }
+
     to {
         margin-bottom: -2rem;
     }
 }
 
 /* * SECTION 3 */
-    @keyframes astronautMoveLeft {
-        from {
-            transform: translateX(50vw);
-        }
-        to {
-            transform: translateX(-100vw);
-        }
+@keyframes astronautMoveLeft {
+    0% {
+        transform: translateX(20vw);
     }
-    
-    
-    
-    
-/* * SECTION 4 */
-    @keyframes astronautShakeY {
-        0% {
-            margin-top: 0;
-        }
-        25% {
-            margin-top: -1rem;
-        }
-        50% {
-            margin-top: 0;
-        }
-        75% {
-            margin-top: -1rem;
-        }
-        100% {
-            margin-top: 0;
-        }
+
+    20% {
+        margin-top: -1rem;
+        transform: translateX(var(--astronautPause));
     }
-    
+
+    40% {
+        margin-top: 0;
+        transform: translateX(var(--astronautPause));
+    }
+
+    60% {
+        margin-top: -1rem;
+        transform: translateX(var(--astronautPause));
+    }
+
+    80% {
+        margin-top: 0;
+        transform: translateX(var(--astronautPause));
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+
+
+
+/* * SECTION 6 */
+@keyframes astronautShakeY {
+    0% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -1rem;
+    }
+
+    50% {
+        margin-top: 0;
+    }
+
+    75% {
+        margin-top: -1rem;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
