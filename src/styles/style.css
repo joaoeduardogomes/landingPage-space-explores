@@ -236,7 +236,7 @@ section {
     }
 
     img#astronaut-4 {
-        top: 30%;
+        top: 20%;
         animation: astronautOrbit 15s linear infinite, astronautZoomIn 10s ease-in;
     }
 }
