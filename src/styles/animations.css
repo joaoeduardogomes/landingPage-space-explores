@@ -88,20 +88,22 @@
 
 /* * SECTION 4 */
 @keyframes astronautOrbit {
-    0% { 
-        transform: translate(0%, 50%) rotate(0turn); 
-    }
-    25% {
-        transform: translate(-100%, 0%) rotate(0.25turn); 
+    0% {
+        transform: rotate(0deg) translateX(-50%);
     }
     50% {
-        transform: translate(0%, -100%) rotate(0.5turn); 
-    }
-    75% {
-        transform: translate(100%, 0%) rotate(0.75turn); 
+        transform: rotate(180deg) translateX(-50%);
     }
     100% {
-        transform: translate(0%, 50%) rotate(1turn); 
+        transform: rotate(360deg) translateX(-50%);
+    }
+}
+@keyframes astronautZoomIn {
+    from {
+        scale: .2;
+    }
+    to {
+        scale: 1;
     }
 }
 
