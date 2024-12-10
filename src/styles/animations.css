@@ -1,6 +1,6 @@
 :root {
     /* TODO change this pause in smaller screens */
-    --astronautPause: -35vw;
+    --astronaut3Pause: -35vw;
 }
 
 /* * SECTION 1 */
@@ -63,22 +63,22 @@
 
     20% {
         margin-top: -1rem;
-        transform: translateX(var(--astronautPause));
+        transform: translateX(var(--astronaut3Pause));
     }
 
     40% {
         margin-top: 0;
-        transform: translateX(var(--astronautPause));
+        transform: translateX(var(--astronaut3Pause));
     }
 
     60% {
         margin-top: -1rem;
-        transform: translateX(var(--astronautPause));
+        transform: translateX(var(--astronaut3Pause));
     }
 
     80% {
         margin-top: 0;
-        transform: translateX(var(--astronautPause));
+        transform: translateX(var(--astronaut3Pause));
     }
 
     100% {
@@ -86,7 +86,24 @@
     }
 }
 
-
+/* * SECTION 4 */
+@keyframes astronautOrbit {
+    0% { 
+        transform: translate(0%, 50%) rotate(0turn); 
+    }
+    25% {
+        transform: translate(-100%, 0%) rotate(0.25turn); 
+    }
+    50% {
+        transform: translate(0%, -100%) rotate(0.5turn); 
+    }
+    75% {
+        transform: translate(100%, 0%) rotate(0.75turn); 
+    }
+    100% {
+        transform: translate(0%, 50%) rotate(1turn); 
+    }
+}
 
 
 /* * SECTION 6 */

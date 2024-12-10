@@ -25,7 +25,7 @@ img:not(#testimonies img, #contact-info img, #social-media img) {
     position: absolute;
     z-index: 0;
     right: 10%;
-    will-change: transform; 
+    will-change: transform, margin-bottom, margin-top; 
     filter: drop-shadow(-2px -3px 5px #00000079);
 }
 
@@ -109,7 +109,6 @@ section {
     background-image: url("../img/backgrounds/background-1.jpg") ;
     flex-direction: column;
     justify-content: space-evenly;
-    z-index: 2;
 
     img {
         margin-left: 50%;
@@ -140,8 +139,7 @@ section {
     display: grid;
     grid-template-areas: ". title ."
                     "p1 . p2";
-    position: relative;
-
+    
     h2 {
         grid-area: title;
         text-align: center;
@@ -183,8 +181,7 @@ section {
     row-gap: 4rem;
     grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: 40% 10% 30%;
-    position: relative;
-    overflow: hidden;
+    z-index: 0;
 
     h2 {
         grid-area: title;
@@ -236,6 +233,12 @@ section {
     p:last-of-type {
         align-self: flex-end;
         margin-right: 5%;
+    }
+
+    img#astronaut-4 {
+        top: 30%;
+        animation: 
+        astronautOrbit 10s linear infinite;
     }
 }
 
