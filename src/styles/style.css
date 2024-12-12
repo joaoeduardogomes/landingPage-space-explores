@@ -47,7 +47,7 @@ main {
 
 section {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     padding: 2rem;
     background: center no-repeat scroll;
     background-size: cover;
@@ -237,7 +237,7 @@ section {
 
     img#astronaut-4 {
         top: 20%;
-        animation: astronautOrbit 15s linear infinite, astronautZoomIn 10s ease-in;
+        animation: astronautOrbit 25s linear infinite, astronautZoomIn 10s ease-in;
     }
 }
 
