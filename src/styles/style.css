@@ -201,6 +201,7 @@ section {
     }
     h3:nth-of-type(3) {
         grid-area: h3c;
+        text-align: right;
     }
     p:nth-of-type(1) {
         grid-area: pa;
@@ -277,6 +278,11 @@ section {
     }
     h3:last-of-type, p:last-of-type {
         margin-right: 4rem;
+    }
+
+    img#astronaut-5 {
+        top: 40%;
+        right: 42vw;
     }
 }
 
