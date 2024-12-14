@@ -1,3 +1,23 @@
+// ? ANIMATION SECTION 5
+const astronaut6a = document.querySelector("#astronaut-6a");
+const astronaut6b = document.querySelector("#astronaut-6b");
+
+let toggle = true; // flag to alternate animations
+
+setInterval(() => {
+    if (toggle) {
+        astronaut6a.classList.add("animationShakeX");
+        astronaut6b.classList.remove("animationShakeY");
+    } else {
+        astronaut6a.classList.remove("animationShakeX");
+        astronaut6b.classList.add("animationShakeY");
+    }
+    toggle = !toggle; // switch the flag
+}, 3000);
+
+
+//? ICONS SECTION
+
 function handleiconChange(element) {
     let extension
 
@@ -31,3 +51,4 @@ for (const element of iconsArr) {
     element.addEventListener("mouseover", () => handleiconChange(element))
     element.addEventListener("mouseout", () => handleIconRevert(element))
 }
+

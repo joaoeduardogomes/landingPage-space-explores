@@ -130,3 +130,24 @@
         margin-top: 0;
     }
 }
+@keyframes astronautShakeX {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -1rem;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -1rem;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}

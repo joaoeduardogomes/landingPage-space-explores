@@ -296,6 +296,22 @@ section {
         margin: 0 auto;
         text-align: left;
     }
+    p:first-of-type {
+        margin-bottom: 2.5rem;
+    }
+
+    img#astronaut-6a {
+        left: 75vw;
+    }
+    .animationShakeX {
+        animation: astronautShakeX 3s ease-in-out infinite;
+    }
+    img#astronaut-6b {
+        left: 86vw;
+    }
+    .animationShakeY {
+        animation: astronautShakeY 3s ease-in-out infinite;
+    }
 }
 
 #testimonial {
