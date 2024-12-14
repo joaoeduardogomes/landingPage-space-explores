@@ -25,13 +25,14 @@ img:not(#testimonies img, #contact-info img, #social-media img) {
     position: absolute;
     z-index: 0;
     right: 10%;
-    will-change: transform, margin-bottom, margin-top; 
+    will-change: transform, margin-bottom, margin-top;
     filter: drop-shadow(-2px -3px 5px #00000079);
 }
 
 .align-right {
     text-align: right;
 }
+
 .align-center {
     text-align: center;
 }
@@ -63,20 +64,22 @@ section {
     h1 {
         font-size: 3.5rem;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
         text-align: center;
         align-self: center;
         margin: 2rem auto;
     }
-    
+
     h2 {
         font-size: 2.4rem;
     }
-    
+
     h3 {
         font-size: 1.8rem;
     }
-    
+
     p {
         font-size: 1.2rem;
     }
@@ -94,11 +97,13 @@ section {
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+
         &:hover {
             background-color: #fff;
             color: #000;
         }
     }
+
     a.btn {
         text-decoration: none;
         text-align: center;
@@ -106,17 +111,19 @@ section {
 }
 
 #hero {
-    background-image: url("../img/backgrounds/background-1.jpg") ;
+    background-image: url("../img/backgrounds/background-1.jpg");
     flex-direction: column;
     justify-content: space-evenly;
 
     img {
         margin-left: 50%;
     }
+
     img#astronaut-1 {
         animation: astronautOneUpAndDown 4s ease-in-out infinite alternate;
         right: 5%;
     }
+
     img#satellite {
         animation: satelliteUpAndDown 4s ease-in-out infinite alternate;
         right: 15%;
@@ -125,10 +132,12 @@ section {
     p {
         font-size: 2.2rem;
     }
+
     p:first-of-type {
         align-self: flex-start;
         margin-left: 10%;
     }
+
     p:last-of-type {
         align-self: center;
     }
@@ -138,23 +147,25 @@ section {
     background-image: url("../img/backgrounds/background-2.jpg");
     display: grid;
     grid-template-areas: ". title ."
-                    "p1 . p2";
-    
+        "p1 . p2";
+
     h2 {
         grid-area: title;
         text-align: center;
         margin-top: -2rem;
     }
+
     p {
         max-width: 640px;
         justify-self: center;
         font-size: 1.6rem;
     }
+
     p:first-of-type {
         grid-area: p1;
         text-align: left;
     }
-    
+
     p:last-of-type {
         grid-area: p2;
     }
@@ -163,6 +174,7 @@ section {
         animation: meteorFall 6s ease-out infinite;
         z-index: 0;
     }
+
     img#astronaut-2 {
         bottom: 5%;
         left: -10%;
@@ -175,8 +187,8 @@ section {
     background-image: url("../img/backgrounds/background-3.jpg");
     display: grid;
     grid-template-areas: ". title ."
-                    "h3a h3b h3c"
-                    "pa pb pc";
+        "h3a h3b h3c"
+        "pa pb pc";
     column-gap: .5rem;
     row-gap: 4rem;
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -186,9 +198,12 @@ section {
     h2 {
         grid-area: title;
     }
-    h3, p {
+
+    h3,
+    p {
         justify-self: center;
     }
+
     h3 {
         align-self: center;
     }
@@ -196,19 +211,24 @@ section {
     h3:nth-of-type(1) {
         grid-area: h3a;
     }
+
     h3:nth-of-type(2) {
         grid-area: h3b;
     }
+
     h3:nth-of-type(3) {
         grid-area: h3c;
         text-align: right;
     }
+
     p:nth-of-type(1) {
         grid-area: pa;
     }
+
     p:nth-of-type(2) {
         grid-area: pb;
     }
+
     p:nth-of-type(3) {
         grid-area: pc;
     }
@@ -227,10 +247,12 @@ section {
         font-size: 1.8rem;
         max-width: 600px;
     }
+
     p:first-of-type {
         align-self: flex-start;
         margin-left: 5%;
     }
+
     p:last-of-type {
         align-self: flex-end;
         margin-right: 5%;
@@ -246,37 +268,47 @@ section {
     background-image: url("../img/backgrounds/background-5.jpg");
     display: grid;
     grid-template-areas: ". title ."
-                        "h3a . h3b"
-                        "p1 . p2";
+        "h3a . h3b"
+        "p1 . p2";
     grid-template-rows: 40% 15% 30%;
     grid-template-columns: 1.5fr 1fr 1.5fr;
 
     h2 {
         grid-area: title;
     }
+
     h3:first-of-type {
         grid-area: h3a;
     }
+
     h3:last-of-type {
         grid-area: h3b;
     }
+
     p {
         font-size: 1.4rem;
     }
+
     p:first-of-type {
         grid-area: p1;
     }
+
     p:last-of-type {
         grid-area: p2;
     }
+
     b {
         font-weight: bold;
         text-decoration: underline;
     }
-    h3:first-of-type, p:first-of-type {
+
+    h3:first-of-type,
+    p:first-of-type {
         margin-left: 4rem;
     }
-    h3:last-of-type, p:last-of-type {
+
+    h3:last-of-type,
+    p:last-of-type {
         margin-right: 4rem;
     }
 
@@ -296,6 +328,7 @@ section {
         margin: 0 auto;
         text-align: left;
     }
+
     p:first-of-type {
         margin-bottom: 2.5rem;
     }
@@ -303,14 +336,17 @@ section {
     img#astronaut-6a {
         left: 75vw;
     }
+
     .animationShakeX {
         animation: astronautShakeX 3s ease-in-out infinite;
     }
+
     img#astronaut-6b {
         left: 86vw;
     }
+
     .animationShakeY {
-        animation: astronautShakeY 3s ease-in-out infinite;
+        animation: astronautShakeY 3s ease-in infinite;
     }
 }
 
@@ -327,26 +363,36 @@ section {
         align-items: baseline;
         margin: auto;
 
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        p:first-of-type {
-            font-size: 1.6rem;
-            max-width: 800px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            max-width: 500px;
+            background-color: #0000004d;
+            padding: 1rem;
+            border-radius: 15px;
+
+            p:first-of-type {
+                font-size: 1.6rem;
+                max-width: 800px;
+            }
+
+            p:last-of-type {
+                align-self: flex-end;
+                margin-right: 2rem;
+            }
         }
-        p:last-of-type {
-            align-self: flex-end;
-            margin-right: 2rem;
+
+        img {
+            max-width: 160px;
+            border-radius: 50%;
         }
     }
-    
-    img {
-        max-width: 160px;
-        border-radius: 50%;
+
+    img#astronaut-7 {
+        bottom: 5%;
     }
-}
 }
 
 #contact {
@@ -361,7 +407,8 @@ section {
         margin-bottom: 2rem;
     }
 
-    #contact-info, #social-media {
+    #contact-info,
+    #social-media {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -378,30 +425,37 @@ section {
             border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease-in;
+
             &:hover {
                 transform: rotate(45deg);
                 background-color: #0000007c;
+
                 img {
                     rotate: -45deg;
                 }
             }
         }
+
         a[name="facebook"]:hover {
             background-color: #039ae5;
         }
+
         a[name="instagram"]:hover {
             background-image: linear-gradient(to bottom right, #304FFE, #4928F4, #6200EA, #673AB7, #8E24AA, #C2185B, #D81B60, #F50057, #FF1744, #FF5722, #FF6F00, #FF9800, #FFC107, #FFD54F, #FFE082, #FFECB3);
         }
+
         a[name="x"]:hover {
             background-color: #000;
         }
     }
 
-    #contact-info img, #social-media img {
+    #contact-info img,
+    #social-media img {
         transition: all 0.3s ease-in;
     }
+
     #social-media img {
         width: 72px;
     }
-    
+
 }
