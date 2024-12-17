@@ -468,6 +468,6 @@ section {
         top: 45vh;
         right: 30vw;
         opacity: 0;
-        animation: astronautSquare 20s infinite 4s;
+        animation: astronautSquare 20s ease-in-out infinite 4s;
     }
 }
