@@ -458,4 +458,9 @@ section {
         width: 72px;
     }
 
+    img#star {
+        top: 45vh;
+        right: 45vw;
+        animation: starSquare 20s ease-in-out infinite;
+    }
 }
