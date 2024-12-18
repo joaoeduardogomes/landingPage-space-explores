@@ -21,6 +21,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #d4d4d4;
+}
+
 img:not(#testimonies img, #contact-info img, #social-media img) {
     position: absolute;
     z-index: 0;
@@ -469,5 +473,24 @@ section {
         right: 30vw;
         opacity: 0;
         animation: astronautSquare 20s ease-in-out infinite 4s;
+    }
+}
+
+a#credits-btn {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    width: fit-content;
+    text-decoration: none;
+    margin: 1rem auto;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        color: #000;
+        background-color: #fff;
+        border-color:  #000;
     }
 }
