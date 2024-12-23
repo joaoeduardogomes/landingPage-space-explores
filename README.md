@@ -21,10 +21,11 @@ Solutions:
 In the end, I can confidently say that most animations are very close to what I envisioned.
 
 ## How to use
-Link for the project on github pages.
+[Link for the project on github pages](https://joaoeduardogomes.github.io/landingPage-space-explores/).
 
 ## Notes
 The animations that I didn't made myself are from [AOS library](https://michalsnik.github.io/aos/). I primarily used it for text content and to display certain elements on the screen.
+The credits.html page is included in the project to provide proper attribution to the creators of the images used.
 
 ## **License**
 ![MIT license](https://img.shields.io/badge/License-MIT-%20?link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmit%2F)
